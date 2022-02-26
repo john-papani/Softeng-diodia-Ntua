@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/chargesby.css">
+    <title>ChargesBY</title>
+</head>
+<nav class="navbar">
+    <div class="max-width">
+        <a href="/home">
+            <img src="/img/home1.png" alt="Home Page" style="width: 80px;height:80px; margin-left: 10px;">
+        </a>
+        <ul class="menu">
+            <li><a href="/pass/AO/2019-01-01/2019-01-31" class="menu-btn">PassesPerStation</a></li>
+            <li><a href="/cost/OO/NE/2019-01-01/2019-01-31" class="menu-btn">PassCost</a></li>
+            <li><a href="/analysis/OO/NE/2019-01-01/2019-01-31" class="menu-btn">PassesAnalysis</a></li>
+            <li><a href="/chargesby/AO/2019-01-01/2019-01-31" class="menu-btn">Chargesby</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+<body>
+    <div class="limiter">
+        <% if(chargesBy !=null){%>
+            <h2 style="color: rgb(0, 0, 0); text-align: center; ">
+                <u> Χρέη προς
+                <%- chargesBy.OP_ID %>
+                </u>
+            </h2>
+            <h4 style="text-align: center;">
+                Apo :
+                <%- chargesBy.PERIOD_FROM%><br> Mexri :
+                    <%- chargesBy.PERIOD_TO%> <br> Time now :
+                        <%- chargesBy.requestTime %>
+            </h4>
+            <br>
+            <table>
+                <tr>
+                    <th>OPERATOR</th>
+                    <th>VALUE(€)</th>
+                </tr>
+                <tr>
+                    <td>
+                        <%- chargesBy.op0 %>
+                    </td>
+                    <td>
+                        <%- chargesBy.value0 %>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <%- chargesBy.op1 %>
+                    </td>
+                    <td>
+                        <%- chargesBy.value1 %>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <%- chargesBy.op2 %>
+                    </td>
+                    <td>
+                        <%- chargesBy.value2 %>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <%- chargesBy.op3 %>
+                    </td>
+                    <td>
+                        <%- chargesBy.value3 %>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <%- chargesBy.op4 %>
+                    </td>
+                    <td>
+                        <%- chargesBy.value4 %>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <%- chargesBy.op5 %>
+                    </td>
+                    <td>
+                        <%- chargesBy.value5 %>
+                    </td>
+                </tr>
+
+            </table>
+
+
+            <% } else { %>
+                <u>NO POSTES FOUND</u>
+                <% } %>
+
+
+</body>
+<br>
+<br>
+<br>
+<footer>
+    <strong>Οδηγίες:</strong><br> Για άλλο operator και ενδεχομένος διαφορετικές ημερομηνίες,<strong>απαιτείται αλλαγή του url.</strong><br> Οι αποδεκτοί operator <i>AO,EG,GF,KO,MR,NE,OO</i><br> Οι ημερομηνίες εισαγόνται με την εξής μορφη YYYYMMDD ή YYYY-MM-DD<br>    Για παράδειγμα: <i> chargesby/AO/2020-12-15/2021-01-01 </i>
+</footer>
+
+
+
+</html>

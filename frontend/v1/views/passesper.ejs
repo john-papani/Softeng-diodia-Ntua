@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PassesPerStation</title>
+</head>
+<a href="/home">HOME PAGE</a><br>
+<a href="#bottom">Οδηγίες</a>
+<body style="background-color: cornflowerblue;">
+
+    <div class="pass" style="text-align: center; ">
+        <% if(passesPer !=null){%>
+            <h2>
+                Διελεύσεις οχημάτων από σταθμούς του <%- passesPerid  %> 
+              <h3>   <i">Αριθμός Διελεύσεων = </i> <%- JSON.stringify(passPernum) %> </h3>
+            </h2>
+            <% passesPer.forEach(function(passPer1,index){ %>
+
+                <h3>
+                    PASS ID <%- passPer1.passID %>
+                </h3>
+                <p>
+                   TIME = <%- passPer1.timestamp %>
+                </p>
+                <p>
+                  STATION =   <%- passPer1.stationRef %>
+                </p>
+                <p>
+                   PINAKIDA OXHMATOS =  <%- passPer1.vehicleRef %>
+                </p>
+                <p>
+                    Tag Operator = <%- passPer1.hn %> 
+                </p
+                <p>
+                    KOSTOS = <%- passPer1.charge %> € 
+                </p>
+
+                <hr>
+                <% }) %>
+                    <% } else { %>
+                        NO POSTES FOUND
+                        <% } %>
+    </div>
+ 
+
+</body> 
+<br>
+<br>
+<div id="bottom"><a href="bottom"></a></div>
+<footer>
+    <strong>Οδηγίες:</strong><br>
+    Για άλλους operator και ενδεχομένος διαφορετικές ημερομηνίες, <strong>απαιτείται αλλαγή του url.</strong><br>
+    Οι αποδεκτοί operator <i>AO,EG,GF,KO,MR,NE,OO</i><br>
+    Οι ημερομηνίες εισαγόνται με την εξής μορφη <strong>αποκλειστικά</strong> YYYY-MM-DD<br>
+    Για παράδειγμα: <i> chargesby/AO/2020-12-15/2021-01-01 </i>
+</footer>
+
+</html>

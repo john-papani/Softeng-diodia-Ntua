@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PassCost</title>
+</head>
+<a href="/home" >HOME PAGE</a>
+<header style="max-width: 400px;font-size: 20px;">
+    Εμφανιζονται ο αριθμός των διέλευσεων αλλά και το πόσο ανάμεσα σε δύο <i>διαφορετικούς</i> operators
+</header>
+
+<body style="background-color: coral;" >
+    <br>
+    <div class="pass" style="text-align: center; ">
+        <% if(passesCost !=null){%>
+            <h3>
+                PASS ID1 = <%- passesCost.op1_ID %>
+            </h3>
+            <h3>
+                PASS ID2 = <%- passesCost.op2_ID %>
+            </h3>
+            <p>
+                TIME = <%- passesCost.RequestTimestamp %>
+            </p>
+            <p>
+                APO = <%- passesCost.PeriodFrom %>
+            </p>
+            <p>
+                MEXRI = <%- passesCost.PeriodTO %>
+            </p>
+            <p>
+               Arithmos Dieleuseon = <%-JSON.stringify (passesCost.NumberOfPasses )%>
+            </p>
+            <p>
+                POSO = <%-JSON.stringify( passesCost.PassesCost) %> €
+            </p>
+
+            <% } else { %>
+                NO POSTES FOUND
+                <% } %>
+    </div>
+    </div>
+
+</body>
+
+<br>
+<br>
+<br>
+<footer>
+    <strong>Οδηγίες:</strong><br>
+    Για άλλους operator και ενδεχομένος διαφορετικές ημερομηνίες, <strong>απαιτείται αλλαγή του url.</strong><br>
+    Οι αποδεκτοί operator <i>AO,EG,GF,KO,MR,NE,OO</i><br>
+    Οι ημερομηνίες εισαγόνται με την εξής μορφη <strong>αποκλειστικά</strong> YYYY-MM-DD<br>
+    Για παράδειγμα: <i> cost/OO/NE/2020-12-15/2021-01-01 </i>
+</footer>
+
+</html>

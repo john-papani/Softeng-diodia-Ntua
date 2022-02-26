@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PassAnalysis</title>
+</head>
+
+<a href="/home">HOME PAGE</a><br>
+<a href="#bottom">Οδηγίες</a>
+<header style="max-width: 400px;font-size: 20px;">
+    Διελεύσεις που πραγματοποιήθηκαν
+    με tag ενος operator σε σταθμούς ενός άλλου.
+
+</header>
+<br>
+<br>
+
+<body style="background-color: darkgoldenrod;">
+    <div class="pass" style="text-align: center; ">
+       
+        <% if(passesAnal !=null){%>
+            <h2>
+                Διελεύσεις οχημάτων με tag <%- passesAnalid2 %> απο σταθμούς του  <%- passesAnalid1 %> 
+                <h3>Αριθμός διελεύσεων =     <%- JSON.stringify(passAnalnum)%> </h3>
+            </h2>
+            <% passesAnal.forEach(function(passAnal,index){ %>
+
+                <h3>
+                    PASS ID <%- passAnal.passID %>
+                </h3>
+                <p>
+                    TIME = <%- passAnal.timestamp %>
+                </p>
+                <p>
+                    STATION = <%- passAnal.stationRef %>
+                </p>
+                <p>
+                    PINAKIDA OXHMATOS = <%- passAnal.vehicleRef %>
+                </p>
+                <p>
+                    KOSTOS = <%- passAnal.charge %> €
+                </p>
+
+                <hr>
+                <% }) %>
+                    <% } else { %>
+                        NO POSTES FOUND
+                        <% } %>
+
+    </div>
+</body>
+
+<br>
+<br>
+<br>
+<div id="bottom"><a href="bottom"></a></div>
+<footer>
+    <strong>Οδηγίες:</strong><br>
+    Για άλλους operator και ενδεχομένος διαφορετικές ημερομηνίες, <strong>απαιτείται αλλαγή του url.</strong><br>
+    Οι αποδεκτοί operator <i>AO,EG,GF,KO,MR,NE,OO</i><br>
+    Οι ημερομηνίες εισαγόνται με την εξής μορφη <strong>αποκλειστικά</strong> YYYY-MM-DD<br>
+    Για παράδειγμα: <i> analysis/OO/NE/2020-12-15/2021-01-01 </i>
+</footer>
+
+</html>

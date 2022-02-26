@@ -1,0 +1,24 @@
+healthcheck:
+se2163 healthcheck
+
+resetpasses:
+se2163 resetpasses
+
+resetvehicles:
+se2163 resetvehicles
+
+resetstations:
+se2163 resetstations
+
+PassesPerStation:
+se2163 passesperstation --station OO --datefrom 20190101 --dateto 20190201 --format json
+
+PassesAnalysis:
+se2163 passesanalysis --op1 OO --op2 NE --datefrom 20190101 --dateto 20190231 --format json
+
+PassesCost:
+se2163 passescost --op1 OO --op2 NE --datefrom 20190101 --dateto 20190201 --format json
+
+ChargesBy:
+se2163 chargesby --op1 OO --datefrom 20190101 --dateto 20200101 --format json
+

@@ -1,0 +1,804 @@
+{
+	"info": {
+		"_postman_id": "1bd9ebb0-ce5e-4add-b8c7-c8f3d8ce11cd",
+		"name": "PROJECT 21-63",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8000/admin/healthcheck",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/admin/healthcheck",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"admin",
+						"healthcheck"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:8000/admin/healthcheck",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/admin/healthcheck",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"admin",
+								"healthcheck"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "33"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"21-iN4BdLvGJqBgwelIlD0Cn7whxKk\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 22 Jan 2022 13:34:31 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"OK\",\n    \"dbconnection\": 41\n}"
+				}
+			]
+		},
+		{
+			"name": "localhost:8000/admin/resetstations",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/admin/resetstations",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"admin",
+						"resetstations"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:8000/admin/resetstations",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/admin/resetstations",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"admin",
+								"resetstations"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "15"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"f-v/Y1JusChTxrQUzPtNAKycooOTA\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 22 Jan 2022 13:22:07 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"OK\"\n}"
+				}
+			]
+		},
+		{
+			"name": "localhost:8000/admin/resetpasses",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/admin/resetpasses",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"admin",
+						"resetpasses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/admin/resetvehicles",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/admin/resetvehicles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"admin",
+						"resetvehicles"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:8000/admin/resetvehicles",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/admin/resetvehicles",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"admin",
+								"resetvehicles"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "15"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"f-v/Y1JusChTxrQUzPtNAKycooOTA\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 22 Jan 2022 13:23:16 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"OK\"\n}"
+				}
+			]
+		},
+		{
+			"name": "localhost:8000/PassesPerStation/:stationID/:date_from/:date_to",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/PassesPerStation/:stationID/:date_from/:date_to",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"PassesPerStation",
+						":stationID",
+						":date_from",
+						":date_to"
+					],
+					"variable": [
+						{
+							"key": "stationID",
+							"value": "AO"
+						},
+						{
+							"key": "date_from",
+							"value": "2019-01-01"
+						},
+						{
+							"key": "date_to",
+							"value": "2019-01-31"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:8000/PassesPerStation/:stationID/:date_from/:date_to",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/PassesPerStation/:stationID/:date_from/:date_to",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"PassesPerStation",
+								":stationID",
+								":date_from",
+								":date_to"
+							],
+							"variable": [
+								{
+									"key": "stationID",
+									"value": "AO"
+								},
+								{
+									"key": "date_from",
+									"value": "2019-01-01"
+								},
+								{
+									"key": "date_to",
+									"value": "2019-01-31"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "23720"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"5ca8-AmezIiZMVUHHpqSrAXFPx9602ZA\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 22 Jan 2022 13:19:51 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"num\": 164,\n    \"list\": [\n        {\n            \"passID\": \"ABE2129498\",\n            \"timestamp\": \"2019-01-02T19:47:17.000Z\",\n            \"stationRef\": \"AO14\",\n            \"vehicleRef\": \"BZ76ROL87339\",\n            \"charge\": 1,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"ACK2794866\",\n            \"timestamp\": \"2019-01-21T05:37:48.000Z\",\n            \"stationRef\": \"AO03\",\n            \"vehicleRef\": \"YL27IFD65117\",\n            \"charge\": 2,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"AJB4007132\",\n            \"timestamp\": \"2019-01-03T04:51:02.000Z\",\n            \"stationRef\": \"AO18\",\n            \"vehicleRef\": \"MX39VOS38645\",\n            \"charge\": 2.8,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"AQO2969238\",\n            \"timestamp\": \"2019-01-12T22:47:02.000Z\",\n            \"stationRef\": \"AO01\",\n            \"vehicleRef\": \"MX39VOS38645\",\n            \"charge\": 2.8,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"AQW7895386\",\n            \"timestamp\": \"2019-01-24T02:30:50.000Z\",\n            \"stationRef\": \"AO03\",\n            \"vehicleRef\": \"BI87HYL81972\",\n            \"charge\": 2.8,\n            \"hn\": \"MR\",\n            \"p\": \"away\"\n        },\n        {\n            \"passID\": \"AUU6469015\",\n            \"timestamp\": \"2019-01-07T04:24:36.000Z\",\n            \"stationRef\": \"AO13\",\n            \"vehicleRef\": \"EM54HQI58682\",\n            \"charge\": 2.8,\n            \"hn\": \"OO\",\n            \"p\": \"away\"\n        },\n        {\n            \"passID\": \"AWB9004088\",\n            \"timestamp\": \"2019-01-02T13:24:47.000Z\",\n            \"stationRef\": \"AO04\",\n            \"vehicleRef\": \"HT62RDI04611\",\n            \"charge\": 2.8,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"AYH1207558\",\n            \"timestamp\": \"2019-01-11T11:40:15.000Z\",\n            \"stationRef\": \"AO00\",\n            \"vehicleRef\": \"DV04FQL29609\",\n            \"charge\": 3.1,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"BAM0767909\",\n            \"timestamp\": \"2019-01-08T16:49:30.000Z\",\n            \"stationRef\": \"AO09\",\n            \"vehicleRef\": \"BM25PHF40639\",\n            \"charge\": 13,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"BDG6166982\",\n            \"timestamp\": \"2019-01-01T04:03:26.000Z\",\n            \"stationRef\": \"AO18\",\n            \"vehicleRef\": \"LG64ARC91224\",\n            \"charge\": 13,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"BJS5915448\",\n            \"timestamp\": \"2019-01-02T19:36:00.000Z\",\n            \"stationRef\": \"AO11\",\n            \"vehicleRef\": \"BZ76ROL87339\",\n            \"charge\": 1,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"BXV4393300\",\n            \"timestamp\": \"2019-01-29T05:46:33.000Z\",\n            \"stationRef\": \"AO03\",\n            \"vehicleRef\": \"QH15HWX24570\",\n            \"charge\": 2.8,\n            \"hn\": \"MR\",\n            \"p\": \"away\"\n        },\n        {\n            \"passID\": \"CJV5924659\",\n            \"timestamp\": \"2019-01-16T08:05:41.000Z\",\n            \"stationRef\": \"AO04\",\n            \"vehicleRef\": \"MQ65WJJ60020\",\n            \"charge\": 2.8,\n            \"hn\": \"KO\",\n            \"p\": \"away\"\n        },\n        {\n            \"passID\": \"CXN7217850\",\n            \"timestamp\": \"2019-01-17T12:09:07.000Z\",\n            \"stationRef\": \"AO15\",\n            \"vehicleRef\": \"PE73VJU23485\",\n            \"charge\": 2.8,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"CZM2945583\",\n            \"timestamp\": \"2019-01-16T18:33:48.000Z\",\n            \"stationRef\": \"AO12\",\n            \"vehicleRef\": \"DP11ENT03275\",\n            \"charge\": 3.1,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"DBX5869412\",\n            \"timestamp\": \"2019-01-28T12:32:58.000Z\",\n            \"stationRef\": \"AO16\",\n            \"vehicleRef\": \"RR73DWB65452\",\n            \"charge\": 2.8,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"DEP9538169\",\n            \"timestamp\": \"2019-01-29T00:28:08.000Z\",\n            \"stationRef\": \"AO02\",\n            \"vehicleRef\": \"DV04FQL29609\",\n            \"charge\": 3.1,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"DIY0897859\",\n            \"timestamp\": \"2019-01-27T21:28:24.000Z\",\n            \"stationRef\": \"AO13\",\n            \"vehicleRef\": \"PE73VJU23485\",\n            \"charge\": 2.8,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"DUR6384757\",\n            \"timestamp\": \"2019-01-08T06:11:22.000Z\",\n            \"stationRef\": \"AO01\",\n            \"vehicleRef\": \"BM25PHF40639\",\n            \"charge\": 13,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"DWC4058747\",\n            \"timestamp\": \"2019-01-23T16:15:06.000Z\",\n            \"stationRef\": \"AO14\",\n            \"vehicleRef\": \"BM25PHF40639\",\n            \"charge\": 13,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"DZH0114567\",\n            \"timestamp\": \"2019-01-08T21:17:47.000Z\",\n            \"stationRef\": \"AO06\",\n            \"vehicleRef\": \"OC94ASJ72024\",\n            \"charge\": 1,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"EFA6350138\",\n            \"timestamp\": \"2019-01-20T17:34:15.000Z\",\n            \"stationRef\": \"AO16\",\n            \"vehicleRef\": \"RR73DWB65452\",\n            \"charge\": 2.8,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"ERV2610440\",\n            \"timestamp\": \"2019-01-27T21:57:44.000Z\",\n            \"stationRef\": \"AO00\",\n            \"vehicleRef\": \"PE73VJU23485\",\n            \"charge\": 2.8,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"EVM7404972\",\n            \"timestamp\": \"2019-01-10T22:03:54.000Z\",\n            \"stationRef\": \"AO09\",\n            \"vehicleRef\": \"OC94ASJ72024\",\n            \"charge\": 1,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"EWR2508893\",\n            \"timestamp\": \"2019-01-03T14:58:43.000Z\",\n            \"stationRef\": \"AO12\",\n            \"vehicleRef\": \"DP11ENT03275\",\n            \"charge\": 3.1,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"EXT1705595\",\n            \"timestamp\": \"2019-01-18T03:04:37.000Z\",\n            \"stationRef\": \"AO04\",\n            \"vehicleRef\": \"EV77EDV52985\",\n            \"charge\": 2.8,\n            \"hn\": \"NE\",\n            \"p\": \"away\"\n        },\n        {\n            \"passID\": \"FAD4262737\",\n            \"timestamp\": \"2019-01-04T14:52:02.000Z\",\n            \"stationRef\": \"AO08\",\n            \"vehicleRef\": \"DV04FQL29609\",\n            \"charge\": 3.1,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"FME3084564\",\n            \"timestamp\": \"2019-01-14T23:04:05.000Z\",\n            \"stationRef\": \"AO18\",\n            \"vehicleRef\": \"BZ76ROL87339\",\n            \"charge\": 1,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"FMV8753724\",\n            \"timestamp\": \"2019-01-12T01:02:34.000Z\",\n            \"stationRef\": \"AO17\",\n            \"vehicleRef\": \"LG64ARC91224\",\n            \"charge\": 13,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"FPN2273454\",\n            \"timestamp\": \"2019-01-19T05:17:52.000Z\",\n            \"stationRef\": \"AO05\",\n            \"vehicleRef\": \"YL27IFD65117\",\n            \"charge\": 2,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"FRP9290882\",\n            \"timestamp\": \"2019-01-04T07:32:06.000Z\",\n            \"stationRef\": \"AO15\",\n            \"vehicleRef\": \"BZ76ROL87339\",\n            \"charge\": 1,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"FSB8854008\",\n            \"timestamp\": \"2019-01-22T00:02:58.000Z\",\n            \"stationRef\": \"AO08\",\n            \"vehicleRef\": \"PM58XHX45588\",\n            \"charge\": 2.8,\n            \"hn\": \"NE\",\n            \"p\": \"away\"\n        },\n        {\n            \"passID\": \"GBJ2338644\",\n            \"timestamp\": \"2019-01-24T08:18:59.000Z\",\n            \"stationRef\": \"AO15\",\n            \"vehicleRef\": \"PE73VJU23485\",\n            \"charge\": 2.8,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"GDI7464831\",\n            \"timestamp\": \"2019-01-29T06:49:40.000Z\",\n            \"stationRef\": \"AO18\",\n            \"vehicleRef\": \"DV04FQL29609\",\n            \"charge\": 3.1,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"GYR0258541\",\n            \"timestamp\": \"2019-01-05T20:43:37.000Z\",\n            \"stationRef\": \"AO13\",\n            \"vehicleRef\": \"RR73DWB65452\",\n            \"charge\": 2.8,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"HBO9619096\",\n            \"timestamp\": \"2019-01-13T00:48:29.000Z\",\n            \"stationRef\": \"AO11\",\n            \"vehicleRef\": \"PE73VJU23485\",\n            \"charge\": 2.8,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"HCX4122632\",\n            \"timestamp\": \"2019-01-07T16:13:54.000Z\",\n            \"stationRef\": \"AO04\",\n            \"vehicleRef\": \"PE73VJU23485\",\n            \"charge\": 2.8,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"HFJ7447396\",\n            \"timestamp\": \"2019-01-14T04:28:28.000Z\",\n            \"stationRef\": \"AO15\",\n            \"vehicleRef\": \"HT62RDI04611\",\n            \"charge\": 2.8,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"HKS0791161\",\n            \"timestamp\": \"2019-01-26T12:57:14.000Z\",\n            \"stationRef\": \"AO09\",\n            \"vehicleRef\": \"RR73DWB65452\",\n            \"charge\": 2.8,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"HLZ2227561\",\n            \"timestamp\": \"2019-01-25T19:03:31.000Z\",\n            \"stationRef\": \"AO14\",\n            \"vehicleRef\": \"BM25PHF40639\",\n            \"charge\": 13,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"HNS0469154\",\n            \"timestamp\": \"2019-01-14T06:15:17.000Z\",\n            \"stationRef\": \"AO13\",\n            \"vehicleRef\": \"DV04FQL29609\",\n            \"charge\": 3.1,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"HRB6253877\",\n            \"timestamp\": \"2019-01-18T15:12:03.000Z\",\n            \"stationRef\": \"AO07\",\n            \"vehicleRef\": \"RR73DWB65452\",\n            \"charge\": 2.8,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"HSO9832566\",\n            \"timestamp\": \"2019-01-08T14:25:21.000Z\",\n            \"stationRef\": \"AO08\",\n            \"vehicleRef\": \"LG64ARC91224\",\n            \"charge\": 13,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"HTD0281631\",\n            \"timestamp\": \"2019-01-07T17:53:52.000Z\",\n            \"stationRef\": \"AO08\",\n            \"vehicleRef\": \"RK48BOP88344\",\n            \"charge\": 2.8,\n            \"hn\": \"OO\",\n            \"p\": \"away\"\n        },\n        {\n            \"passID\": \"HUI0838553\",\n            \"timestamp\": \"2019-01-30T19:50:44.000Z\",\n            \"stationRef\": \"AO19\",\n            \"vehicleRef\": \"HT62RDI04611\",\n            \"charge\": 2.8,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"ICT4924593\",\n            \"timestamp\": \"2019-01-28T14:37:32.000Z\",\n            \"stationRef\": \"AO13\",\n            \"vehicleRef\": \"HW75BKT77773\",\n            \"charge\": 2.8,\n            \"hn\": \"KO\",\n            \"p\": \"away\"\n        },\n        {\n            \"passID\": \"IEP5322365\",\n            \"timestamp\": \"2019-01-03T22:46:18.000Z\",\n            \"stationRef\": \"AO05\",\n            \"vehicleRef\": \"YL27IFD65117\",\n            \"charge\": 2,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"IFD0717389\",\n            \"timestamp\": \"2019-01-27T04:45:44.000Z\",\n            \"stationRef\": \"AO08\",\n            \"vehicleRef\": \"PE73VJU23485\",\n            \"charge\": 2.8,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"IFJ8804175\",\n            \"timestamp\": \"2019-01-13T00:59:13.000Z\",\n            \"stationRef\": \"AO19\",\n            \"vehicleRef\": \"YL27IFD65117\",\n            \"charge\": 2,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"IKP1014708\",\n            \"timestamp\": \"2019-01-03T21:28:32.000Z\",\n            \"stationRef\": \"AO02\",\n            \"vehicleRef\": \"PE73VJU23485\",\n            \"charge\": 2.8,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"INQ8456777\",\n            \"timestamp\": \"2019-01-08T05:47:16.000Z\",\n            \"stationRef\": \"AO17\",\n            \"vehicleRef\": \"JD78PQD35395\",\n            \"charge\": 2.8,\n            \"hn\": \"EG\",\n            \"p\": \"away\"\n        },\n        {\n            \"passID\": \"IRX8848859\",\n            \"timestamp\": \"2019-01-06T10:57:40.000Z\",\n            \"stationRef\": \"AO08\",\n            \"vehicleRef\": \"RR73DWB65452\",\n            \"charge\": 2.8,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"IWZ6784211\",\n            \"timestamp\": \"2019-01-04T00:51:02.000Z\",\n            \"stationRef\": \"AO05\",\n            \"vehicleRef\": \"DV04FQL29609\",\n            \"charge\": 3.1,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"JBY8521491\",\n            \"timestamp\": \"2019-01-14T22:04:37.000Z\",\n            \"stationRef\": \"AO00\",\n            \"vehicleRef\": \"YL27IFD65117\",\n            \"charge\": 2,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"JCR0899018\",\n            \"timestamp\": \"2019-01-25T19:30:30.000Z\",\n            \"stationRef\": \"AO05\",\n            \"vehicleRef\": \"HT62RDI04611\",\n            \"charge\": 2.8,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"JDH9420292\",\n            \"timestamp\": \"2019-01-20T19:57:37.000Z\",\n            \"stationRef\": \"AO11\",\n            \"vehicleRef\": \"YL27IFD65117\",\n            \"charge\": 2,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"JGN3454826\",\n            \"timestamp\": \"2019-01-18T01:47:16.000Z\",\n            \"stationRef\": \"AO04\",\n            \"vehicleRef\": \"DV04FQL29609\",\n            \"charge\": 3.1,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"JLX0674827\",\n            \"timestamp\": \"2019-01-27T09:56:50.000Z\",\n            \"stationRef\": \"AO07\",\n            \"vehicleRef\": \"PE73VJU23485\",\n            \"charge\": 2.8,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"JME6478284\",\n            \"timestamp\": \"2019-01-23T01:33:46.000Z\",\n            \"stationRef\": \"AO06\",\n            \"vehicleRef\": \"PE73VJU23485\",\n            \"charge\": 2.8,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"JMH7842538\",\n            \"timestamp\": \"2019-01-30T09:06:23.000Z\",\n            \"stationRef\": \"AO05\",\n            \"vehicleRef\": \"BM25PHF40639\",\n            \"charge\": 13,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"JTH9691824\",\n            \"timestamp\": \"2019-01-24T07:28:47.000Z\",\n            \"stationRef\": \"AO05\",\n            \"vehicleRef\": \"HT62RDI04611\",\n            \"charge\": 2.8,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"JUE2068237\",\n            \"timestamp\": \"2019-01-22T15:00:43.000Z\",\n            \"stationRef\": \"AO17\",\n            \"vehicleRef\": \"MX39VOS38645\",\n            \"charge\": 2.8,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"JYG0256462\",\n            \"timestamp\": \"2019-01-04T04:18:08.000Z\",\n            \"stationRef\": \"AO17\",\n            \"vehicleRef\": \"OC94ASJ72024\",\n            \"charge\": 1,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"JYK8853857\",\n            \"timestamp\": \"2019-01-11T10:54:29.000Z\",\n            \"stationRef\": \"AO13\",\n            \"vehicleRef\": \"VX68BAR38623\",\n            \"charge\": 2.8,\n            \"hn\": \"NE\",\n            \"p\": \"away\"\n        },\n        {\n            \"passID\": \"JZP9177875\",\n            \"timestamp\": \"2019-01-03T12:02:19.000Z\",\n            \"stationRef\": \"AO04\",\n            \"vehicleRef\": \"YL27IFD65117\",\n            \"charge\": 2,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"KEE7775626\",\n            \"timestamp\": \"2019-01-19T09:48:28.000Z\",\n            \"stationRef\": \"AO13\",\n            \"vehicleRef\": \"DV04FQL29609\",\n            \"charge\": 3.1,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"KEF4554300\",\n            \"timestamp\": \"2019-01-13T16:18:49.000Z\",\n            \"stationRef\": \"AO17\",\n            \"vehicleRef\": \"MX39VOS38645\",\n            \"charge\": 2.8,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"KEU1037167\",\n            \"timestamp\": \"2019-01-23T06:03:57.000Z\",\n            \"stationRef\": \"AO07\",\n            \"vehicleRef\": \"LG64ARC91224\",\n            \"charge\": 13,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"KJC6691428\",\n            \"timestamp\": \"2019-01-21T00:49:16.000Z\",\n            \"stationRef\": \"AO10\",\n            \"vehicleRef\": \"HT62RDI04611\",\n            \"charge\": 2.8,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"KSH0465431\",\n            \"timestamp\": \"2019-01-23T11:22:57.000Z\",\n            \"stationRef\": \"AO15\",\n            \"vehicleRef\": \"YL27IFD65117\",\n            \"charge\": 2,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"LBX3298243\",\n            \"timestamp\": \"2019-01-20T17:38:01.000Z\",\n            \"stationRef\": \"AO02\",\n            \"vehicleRef\": \"UF84JOS00561\",\n            \"charge\": 2.8,\n            \"hn\": \"GF\",\n            \"p\": \"away\"\n        },\n        {\n            \"passID\": \"LLB0471775\",\n            \"timestamp\": \"2019-01-12T17:28:19.000Z\",\n            \"stationRef\": \"AO02\",\n            \"vehicleRef\": \"VL67TFO75321\",\n            \"charge\": 2.8,\n            \"hn\": \"EG\",\n            \"p\": \"away\"\n        },\n        {\n            \"passID\": \"LMA8654820\",\n            \"timestamp\": \"2019-01-08T07:59:33.000Z\",\n            \"stationRef\": \"AO04\",\n            \"vehicleRef\": \"EC02LZC49528\",\n            \"charge\": 2.8,\n            \"hn\": \"EG\",\n            \"p\": \"away\"\n        },\n        {\n            \"passID\": \"LOR3942582\",\n            \"timestamp\": \"2019-01-29T07:24:47.000Z\",\n            \"stationRef\": \"AO17\",\n            \"vehicleRef\": \"RR73DWB65452\",\n            \"charge\": 2.8,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"LVK0081160\",\n            \"timestamp\": \"2019-01-20T09:34:37.000Z\",\n            \"stationRef\": \"AO09\",\n            \"vehicleRef\": \"DP11ENT03275\",\n            \"charge\": 3.1,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"LVP7119773\",\n            \"timestamp\": \"2019-01-16T21:53:23.000Z\",\n            \"stationRef\": \"AO03\",\n            \"vehicleRef\": \"OC94ASJ72024\",\n            \"charge\": 1,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"LYM3865613\",\n            \"timestamp\": \"2019-01-27T07:18:05.000Z\",\n            \"stationRef\": \"AO02\",\n            \"vehicleRef\": \"XV40HUQ04740\",\n            \"charge\": 2.8,\n            \"hn\": \"OO\",\n            \"p\": \"away\"\n        },\n        {\n            \"passID\": \"MMW8437362\",\n            \"timestamp\": \"2019-01-17T12:14:01.000Z\",\n            \"stationRef\": \"AO17\",\n            \"vehicleRef\": \"NZ35XLQ89678\",\n            \"charge\": 2.8,\n            \"hn\": \"NE\",\n            \"p\": \"away\"\n        },\n        {\n            \"passID\": \"MRE3522085\",\n            \"timestamp\": \"2019-01-17T22:45:29.000Z\",\n            \"stationRef\": \"AO15\",\n            \"vehicleRef\": \"HT62RDI04611\",\n            \"charge\": 2.8,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"MSJ0940791\",\n            \"timestamp\": \"2019-01-28T15:05:22.000Z\",\n            \"stationRef\": \"AO04\",\n            \"vehicleRef\": \"DP11ENT03275\",\n            \"charge\": 3.1,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"MXM6404031\",\n            \"timestamp\": \"2019-01-06T05:06:45.000Z\",\n            \"stationRef\": \"AO14\",\n            \"vehicleRef\": \"YL27IFD65117\",\n            \"charge\": 2,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"NBJ7274983\",\n            \"timestamp\": \"2019-01-11T12:22:01.000Z\",\n            \"stationRef\": \"AO10\",\n            \"vehicleRef\": \"YH66OKD41942\",\n            \"charge\": 2.8,\n            \"hn\": \"KO\",\n            \"p\": \"away\"\n        },\n        {\n            \"passID\": \"NHY3086874\",\n            \"timestamp\": \"2019-01-02T05:11:08.000Z\",\n            \"stationRef\": \"AO15\",\n            \"vehicleRef\": \"YL27IFD65117\",\n            \"charge\": 2,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"NMJ0226156\",\n            \"timestamp\": \"2019-01-28T04:13:18.000Z\",\n            \"stationRef\": \"AO16\",\n            \"vehicleRef\": \"YX66XYW62640\",\n            \"charge\": 2.8,\n            \"hn\": \"GF\",\n            \"p\": \"away\"\n        },\n        {\n            \"passID\": \"NPL6941453\",\n            \"timestamp\": \"2019-01-22T03:33:49.000Z\",\n            \"stationRef\": \"AO06\",\n            \"vehicleRef\": \"QO77TFN61853\",\n            \"charge\": 2.8,\n            \"hn\": \"KO\",\n            \"p\": \"away\"\n        },\n        {\n            \"passID\": \"NQU2005152\",\n            \"timestamp\": \"2019-01-02T02:18:07.000Z\",\n            \"stationRef\": \"AO18\",\n            \"vehicleRef\": \"RR73DWB65452\",\n            \"charge\": 2.8,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"NRS6422542\",\n            \"timestamp\": \"2019-01-15T12:34:19.000Z\",\n            \"stationRef\": \"AO08\",\n            \"vehicleRef\": \"QP02SYE47964\",\n            \"charge\": 2.8,\n            \"hn\": \"NE\",\n            \"p\": \"away\"\n        },\n        {\n            \"passID\": \"NSR5538511\",\n            \"timestamp\": \"2019-01-01T03:23:14.000Z\",\n            \"stationRef\": \"AO07\",\n            \"vehicleRef\": \"DP11ENT03275\",\n            \"charge\": 3.1,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"NWU2289217\",\n            \"timestamp\": \"2019-01-12T02:55:20.000Z\",\n            \"stationRef\": \"AO05\",\n            \"vehicleRef\": \"BM25PHF40639\",\n            \"charge\": 13,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"OAO8290605\",\n            \"timestamp\": \"2019-01-18T14:45:04.000Z\",\n            \"stationRef\": \"AO00\",\n            \"vehicleRef\": \"BM25PHF40639\",\n            \"charge\": 13,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"OCP6514091\",\n            \"timestamp\": \"2019-01-12T03:57:25.000Z\",\n            \"stationRef\": \"AO05\",\n            \"vehicleRef\": \"MX39VOS38645\",\n            \"charge\": 2.8,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"ONG6137737\",\n            \"timestamp\": \"2019-01-21T23:10:01.000Z\",\n            \"stationRef\": \"AO02\",\n            \"vehicleRef\": \"LG64ARC91224\",\n            \"charge\": 13,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"OWN2040268\",\n            \"timestamp\": \"2019-01-10T20:51:05.000Z\",\n            \"stationRef\": \"AO10\",\n            \"vehicleRef\": \"BZ76ROL87339\",\n            \"charge\": 1,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"OXZ1919330\",\n            \"timestamp\": \"2019-01-16T04:19:32.000Z\",\n            \"stationRef\": \"AO13\",\n            \"vehicleRef\": \"DP11ENT03275\",\n            \"charge\": 3.1,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"OYS9884791\",\n            \"timestamp\": \"2019-01-18T06:17:53.000Z\",\n            \"stationRef\": \"AO06\",\n            \"vehicleRef\": \"SU00RDZ36214\",\n            \"charge\": 2.8,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"PCL4546758\",\n            \"timestamp\": \"2019-01-19T22:44:27.000Z\",\n            \"stationRef\": \"AO01\",\n            \"vehicleRef\": \"YL27IFD65117\",\n            \"charge\": 2,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"PEJ6840364\",\n            \"timestamp\": \"2019-01-09T02:16:36.000Z\",\n            \"stationRef\": \"AO06\",\n            \"vehicleRef\": \"PE73VJU23485\",\n            \"charge\": 2.8,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"PFG9247768\",\n            \"timestamp\": \"2019-01-15T09:25:57.000Z\",\n            \"stationRef\": \"AO16\",\n            \"vehicleRef\": \"DP11ENT03275\",\n            \"charge\": 3.1,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"PKE8909615\",\n            \"timestamp\": \"2019-01-13T20:41:36.000Z\",\n            \"stationRef\": \"AO03\",\n            \"vehicleRef\": \"OC94ASJ72024\",\n            \"charge\": 1,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"PKY6493787\",\n            \"timestamp\": \"2019-01-21T23:40:26.000Z\",\n            \"stationRef\": \"AO15\",\n            \"vehicleRef\": \"DV04FQL29609\",\n            \"charge\": 3.1,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"PNY2910910\",\n            \"timestamp\": \"2019-01-29T22:34:29.000Z\",\n            \"stationRef\": \"AO05\",\n            \"vehicleRef\": \"DP11ENT03275\",\n            \"charge\": 3.1,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"PPU9152797\",\n            \"timestamp\": \"2019-01-08T11:04:24.000Z\",\n            \"stationRef\": \"AO13\",\n            \"vehicleRef\": \"FL13UMN92207\",\n            \"charge\": 2.8,\n            \"hn\": \"KO\",\n            \"p\": \"away\"\n        },\n        {\n            \"passID\": \"PUH3791153\",\n            \"timestamp\": \"2019-01-30T04:04:07.000Z\",\n            \"stationRef\": \"AO19\",\n            \"vehicleRef\": \"XV40HUQ04740\",\n            \"charge\": 2.8,\n            \"hn\": \"OO\",\n            \"p\": \"away\"\n        },\n        {\n            \"passID\": \"PVJ3943516\",\n            \"timestamp\": \"2019-01-06T10:54:19.000Z\",\n            \"stationRef\": \"AO15\",\n            \"vehicleRef\": \"XE59BZM26378\",\n            \"charge\": 2.8,\n            \"hn\": \"EG\",\n            \"p\": \"away\"\n        },\n        {\n            \"passID\": \"PXS2170897\",\n            \"timestamp\": \"2019-01-15T07:33:03.000Z\",\n            \"stationRef\": \"AO08\",\n            \"vehicleRef\": \"BZ76ROL87339\",\n            \"charge\": 1,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"QBX3397483\",\n            \"timestamp\": \"2019-01-20T10:10:02.000Z\",\n            \"stationRef\": \"AO15\",\n            \"vehicleRef\": \"DV04FQL29609\",\n            \"charge\": 3.1,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"QBX7555683\",\n            \"timestamp\": \"2019-01-15T16:21:16.000Z\",\n            \"stationRef\": \"AO14\",\n            \"vehicleRef\": \"HT62RDI04611\",\n            \"charge\": 2.8,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"QCE4981246\",\n            \"timestamp\": \"2019-01-12T06:15:34.000Z\",\n            \"stationRef\": \"AO09\",\n            \"vehicleRef\": \"YH66OKD41942\",\n            \"charge\": 2.8,\n            \"hn\": \"KO\",\n            \"p\": \"away\"\n        },\n        {\n            \"passID\": \"QEW8462058\",\n            \"timestamp\": \"2019-01-15T10:35:04.000Z\",\n            \"stationRef\": \"AO06\",\n            \"vehicleRef\": \"OY94SZK34436\",\n            \"charge\": 2.8,\n            \"hn\": \"NE\",\n            \"p\": \"away\"\n        },\n        {\n            \"passID\": \"QJV6229916\",\n            \"timestamp\": \"2019-01-25T18:59:08.000Z\",\n            \"stationRef\": \"AO11\",\n            \"vehicleRef\": \"DV04FQL29609\",\n            \"charge\": 3.1,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"QKM7534487\",\n            \"timestamp\": \"2019-01-29T01:03:30.000Z\",\n            \"stationRef\": \"AO17\",\n            \"vehicleRef\": \"BM25PHF40639\",\n            \"charge\": 13,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"QPA7178739\",\n            \"timestamp\": \"2019-01-29T23:01:24.000Z\",\n            \"stationRef\": \"AO15\",\n            \"vehicleRef\": \"BM25PHF40639\",\n            \"charge\": 13,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"RBK8060006\",\n            \"timestamp\": \"2019-01-07T03:27:05.000Z\",\n            \"stationRef\": \"AO05\",\n            \"vehicleRef\": \"YL27IFD65117\",\n            \"charge\": 2,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"RCB0419705\",\n            \"timestamp\": \"2019-01-10T08:50:39.000Z\",\n            \"stationRef\": \"AO02\",\n            \"vehicleRef\": \"BZ76ROL87339\",\n            \"charge\": 2.8,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"RDV6518451\",\n            \"timestamp\": \"2019-01-03T00:39:56.000Z\",\n            \"stationRef\": \"AO15\",\n            \"vehicleRef\": \"XE59BZM26378\",\n            \"charge\": 2.8,\n            \"hn\": \"EG\",\n            \"p\": \"away\"\n        },\n        {\n            \"passID\": \"REY1884058\",\n            \"timestamp\": \"2019-01-19T16:08:43.000Z\",\n            \"stationRef\": \"AO09\",\n            \"vehicleRef\": \"SU00RDZ36214\",\n            \"charge\": 2.8,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"RIU8037058\",\n            \"timestamp\": \"2019-01-12T05:58:22.000Z\",\n            \"stationRef\": \"AO18\",\n            \"vehicleRef\": \"DP11ENT03275\",\n            \"charge\": 3.1,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"RKH1254030\",\n            \"timestamp\": \"2019-01-17T06:10:26.000Z\",\n            \"stationRef\": \"AO06\",\n            \"vehicleRef\": \"MX39VOS38645\",\n            \"charge\": 2.8,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"RNW5431161\",\n            \"timestamp\": \"2019-01-18T14:05:01.000Z\",\n            \"stationRef\": \"AO14\",\n            \"vehicleRef\": \"IO09FGE68100\",\n            \"charge\": 2.8,\n            \"hn\": \"GF\",\n            \"p\": \"away\"\n        },\n        {\n            \"passID\": \"RNX5573794\",\n            \"timestamp\": \"2019-01-10T07:47:06.000Z\",\n            \"stationRef\": \"AO08\",\n            \"vehicleRef\": \"QW79CHL42244\",\n            \"charge\": 2.8,\n            \"hn\": \"KO\",\n            \"p\": \"away\"\n        },\n        {\n            \"passID\": \"RPD5210185\",\n            \"timestamp\": \"2019-01-24T10:40:23.000Z\",\n            \"stationRef\": \"AO04\",\n            \"vehicleRef\": \"LG64ARC91224\",\n            \"charge\": 13,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"RPT4573426\",\n            \"timestamp\": \"2019-01-22T09:56:54.000Z\",\n            \"stationRef\": \"AO01\",\n            \"vehicleRef\": \"PE73VJU23485\",\n            \"charge\": 2.8,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"RSH8433688\",\n            \"timestamp\": \"2019-01-12T08:45:47.000Z\",\n            \"stationRef\": \"AO17\",\n            \"vehicleRef\": \"QH15HWX24570\",\n            \"charge\": 2.8,\n            \"hn\": \"MR\",\n            \"p\": \"away\"\n        },\n        {\n            \"passID\": \"RWG6921523\",\n            \"timestamp\": \"2019-01-10T18:58:41.000Z\",\n            \"stationRef\": \"AO10\",\n            \"vehicleRef\": \"LG64ARC91224\",\n            \"charge\": 13,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"SEC1087296\",\n            \"timestamp\": \"2019-01-17T12:22:56.000Z\",\n            \"stationRef\": \"AO00\",\n            \"vehicleRef\": \"YL27IFD65117\",\n            \"charge\": 2,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"SNO1901037\",\n            \"timestamp\": \"2019-01-02T14:40:43.000Z\",\n            \"stationRef\": \"AO15\",\n            \"vehicleRef\": \"BM25PHF40639\",\n            \"charge\": 13,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"SSH0209034\",\n            \"timestamp\": \"2019-01-27T17:05:55.000Z\",\n            \"stationRef\": \"AO17\",\n            \"vehicleRef\": \"QN12NTR81378\",\n            \"charge\": 2.8,\n            \"hn\": \"GF\",\n            \"p\": \"away\"\n        },\n        {\n            \"passID\": \"THJ4181646\",\n            \"timestamp\": \"2019-01-18T09:06:19.000Z\",\n            \"stationRef\": \"AO02\",\n            \"vehicleRef\": \"YL27IFD65117\",\n            \"charge\": 2,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"TJM4990743\",\n            \"timestamp\": \"2019-01-15T17:25:07.000Z\",\n            \"stationRef\": \"AO05\",\n            \"vehicleRef\": \"BM25PHF40639\",\n            \"charge\": 13,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"TNG2672810\",\n            \"timestamp\": \"2019-01-12T10:15:59.000Z\",\n            \"stationRef\": \"AO07\",\n            \"vehicleRef\": \"PD45WOT56494\",\n            \"charge\": 2.8,\n            \"hn\": \"NE\",\n            \"p\": \"away\"\n        },\n        {\n            \"passID\": \"TOH4508765\",\n            \"timestamp\": \"2019-01-10T04:28:39.000Z\",\n            \"stationRef\": \"AO19\",\n            \"vehicleRef\": \"CR31GMR97972\",\n            \"charge\": 2.8,\n            \"hn\": \"EG\",\n            \"p\": \"away\"\n        },\n        {\n            \"passID\": \"TYT3955033\",\n            \"timestamp\": \"2019-01-05T01:58:41.000Z\",\n            \"stationRef\": \"AO08\",\n            \"vehicleRef\": \"VL67TFO75321\",\n            \"charge\": 2.8,\n            \"hn\": \"EG\",\n            \"p\": \"away\"\n        },\n        {\n            \"passID\": \"TYZ7858082\",\n            \"timestamp\": \"2019-01-27T20:27:56.000Z\",\n            \"stationRef\": \"AO19\",\n            \"vehicleRef\": \"BM25PHF40639\",\n            \"charge\": 13,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"UIV0991172\",\n            \"timestamp\": \"2019-01-01T07:35:35.000Z\",\n            \"stationRef\": \"AO16\",\n            \"vehicleRef\": \"NO82BAX82566\",\n            \"charge\": 2.8,\n            \"hn\": \"NE\",\n            \"p\": \"away\"\n        },\n        {\n            \"passID\": \"UJT4416189\",\n            \"timestamp\": \"2019-01-30T09:00:42.000Z\",\n            \"stationRef\": \"AO15\",\n            \"vehicleRef\": \"LG64ARC91224\",\n            \"charge\": 13,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"ULN8974546\",\n            \"timestamp\": \"2019-01-06T01:48:41.000Z\",\n            \"stationRef\": \"AO12\",\n            \"vehicleRef\": \"HT62RDI04611\",\n            \"charge\": 2.8,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"UPV7982589\",\n            \"timestamp\": \"2019-01-13T15:07:45.000Z\",\n            \"stationRef\": \"AO03\",\n            \"vehicleRef\": \"YH66OKD41942\",\n            \"charge\": 2.8,\n            \"hn\": \"KO\",\n            \"p\": \"away\"\n        },\n        {\n            \"passID\": \"UQR3278904\",\n            \"timestamp\": \"2019-01-07T14:05:57.000Z\",\n            \"stationRef\": \"AO13\",\n            \"vehicleRef\": \"EV77EDV52985\",\n            \"charge\": 2.8,\n            \"hn\": \"NE\",\n            \"p\": \"away\"\n        },\n        {\n            \"passID\": \"URS1804102\",\n            \"timestamp\": \"2019-01-16T11:55:47.000Z\",\n            \"stationRef\": \"AO19\",\n            \"vehicleRef\": \"YL27IFD65117\",\n            \"charge\": 2,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"UTI9677334\",\n            \"timestamp\": \"2019-01-01T06:52:43.000Z\",\n            \"stationRef\": \"AO13\",\n            \"vehicleRef\": \"DP11ENT03275\",\n            \"charge\": 3.1,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"UTQ3016461\",\n            \"timestamp\": \"2019-01-21T01:03:07.000Z\",\n            \"stationRef\": \"AO14\",\n            \"vehicleRef\": \"IX01MVL33676\",\n            \"charge\": 2.8,\n            \"hn\": \"KO\",\n            \"p\": \"away\"\n        },\n        {\n            \"passID\": \"UWV9537409\",\n            \"timestamp\": \"2019-01-05T19:22:10.000Z\",\n            \"stationRef\": \"AO01\",\n            \"vehicleRef\": \"DP11ENT03275\",\n            \"charge\": 3.1,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"VAX9694421\",\n            \"timestamp\": \"2019-01-27T05:51:38.000Z\",\n            \"stationRef\": \"AO18\",\n            \"vehicleRef\": \"SY96JDQ97089\",\n            \"charge\": 1.5,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"VOL1460364\",\n            \"timestamp\": \"2019-01-12T15:23:49.000Z\",\n            \"stationRef\": \"AO18\",\n            \"vehicleRef\": \"LG64ARC91224\",\n            \"charge\": 13,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"VRE3149856\",\n            \"timestamp\": \"2019-01-11T19:59:28.000Z\",\n            \"stationRef\": \"AO03\",\n            \"vehicleRef\": \"DV04FQL29609\",\n            \"charge\": 3.1,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"VVT1124019\",\n            \"timestamp\": \"2019-01-17T16:58:23.000Z\",\n            \"stationRef\": \"AO18\",\n            \"vehicleRef\": \"BM25PHF40639\",\n            \"charge\": 13,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"WEZ7128958\",\n            \"timestamp\": \"2019-01-23T21:33:27.000Z\",\n            \"stationRef\": \"AO17\",\n            \"vehicleRef\": \"JF94VYA88954\",\n            \"charge\": 2.8,\n            \"hn\": \"OO\",\n            \"p\": \"away\"\n        },\n        {\n            \"passID\": \"WLZ8632136\",\n            \"timestamp\": \"2019-01-22T09:02:08.000Z\",\n            \"stationRef\": \"AO01\",\n            \"vehicleRef\": \"SU00RDZ36214\",\n            \"charge\": 2.8,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"WOX8452591\",\n            \"timestamp\": \"2019-01-11T00:42:51.000Z\",\n            \"stationRef\": \"AO18\",\n            \"vehicleRef\": \"SY96JDQ97089\",\n            \"charge\": 1.5,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"WUW7239302\",\n            \"timestamp\": \"2019-01-25T20:59:14.000Z\",\n            \"stationRef\": \"AO11\",\n            \"vehicleRef\": \"DW44ZOO26361\",\n            \"charge\": 2.8,\n            \"hn\": \"EG\",\n            \"p\": \"away\"\n        },\n        {\n            \"passID\": \"XED0298879\",\n            \"timestamp\": \"2019-01-20T08:10:33.000Z\",\n            \"stationRef\": \"AO10\",\n            \"vehicleRef\": \"HT62RDI04611\",\n            \"charge\": 2.8,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"XFZ0333251\",\n            \"timestamp\": \"2019-01-14T20:22:48.000Z\",\n            \"stationRef\": \"AO16\",\n            \"vehicleRef\": \"PE73VJU23485\",\n            \"charge\": 2.8,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"XIK2076229\",\n            \"timestamp\": \"2019-01-26T14:36:13.000Z\",\n            \"stationRef\": \"AO06\",\n            \"vehicleRef\": \"DV04FQL29609\",\n            \"charge\": 3.1,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"XJI8331426\",\n            \"timestamp\": \"2019-01-30T20:40:18.000Z\",\n            \"stationRef\": \"AO16\",\n            \"vehicleRef\": \"NO82BAX82566\",\n            \"charge\": 2.8,\n            \"hn\": \"NE\",\n            \"p\": \"away\"\n        },\n        {\n            \"passID\": \"XQT9913725\",\n            \"timestamp\": \"2019-01-07T19:39:27.000Z\",\n            \"stationRef\": \"AO12\",\n            \"vehicleRef\": \"LG64ARC91224\",\n            \"charge\": 13,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"XVJ2633686\",\n            \"timestamp\": \"2019-01-16T23:35:10.000Z\",\n            \"stationRef\": \"AO04\",\n            \"vehicleRef\": \"BM25PHF40639\",\n            \"charge\": 13,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"YBD6909614\",\n            \"timestamp\": \"2019-01-18T06:06:32.000Z\",\n            \"stationRef\": \"AO19\",\n            \"vehicleRef\": \"MX39VOS38645\",\n            \"charge\": 2.8,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"YGN1666843\",\n            \"timestamp\": \"2019-01-12T14:27:31.000Z\",\n            \"stationRef\": \"AO04\",\n            \"vehicleRef\": \"YL27IFD65117\",\n            \"charge\": 2,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"YOW7433640\",\n            \"timestamp\": \"2019-01-01T15:18:17.000Z\",\n            \"stationRef\": \"AO02\",\n            \"vehicleRef\": \"QN23UHH39091\",\n            \"charge\": 2.8,\n            \"hn\": \"MR\",\n            \"p\": \"away\"\n        },\n        {\n            \"passID\": \"YZM6792069\",\n            \"timestamp\": \"2019-01-29T03:20:31.000Z\",\n            \"stationRef\": \"AO09\",\n            \"vehicleRef\": \"RR73DWB65452\",\n            \"charge\": 2.8,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"ZIT8440285\",\n            \"timestamp\": \"2019-01-25T01:08:37.000Z\",\n            \"stationRef\": \"AO10\",\n            \"vehicleRef\": \"DP11ENT03275\",\n            \"charge\": 3.1,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"ZJF6390004\",\n            \"timestamp\": \"2019-01-18T20:03:48.000Z\",\n            \"stationRef\": \"AO09\",\n            \"vehicleRef\": \"LG64ARC91224\",\n            \"charge\": 13,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"ZQV8793452\",\n            \"timestamp\": \"2019-01-20T14:46:50.000Z\",\n            \"stationRef\": \"AO18\",\n            \"vehicleRef\": \"LG64ARC91224\",\n            \"charge\": 13,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        },\n        {\n            \"passID\": \"ZTV2947809\",\n            \"timestamp\": \"2019-01-08T16:51:10.000Z\",\n            \"stationRef\": \"AO05\",\n            \"vehicleRef\": \"DP11ENT03275\",\n            \"charge\": 3.1,\n            \"hn\": \"AO\",\n            \"p\": \"home\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "localhost:8000/PassesAnalysis/:op1_ID/:op2_ID/:date_from/:date_to",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/PassesAnalysis/:op1_ID/:op2_ID/:date_from/:date_to",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"PassesAnalysis",
+						":op1_ID",
+						":op2_ID",
+						":date_from",
+						":date_to"
+					],
+					"variable": [
+						{
+							"key": "op1_ID",
+							"value": "AO"
+						},
+						{
+							"key": "op2_ID",
+							"value": "OO"
+						},
+						{
+							"key": "date_from",
+							"value": "2019-01-01"
+						},
+						{
+							"key": "date_to",
+							"value": "2019-01-31"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:8000/PassesAnalysis/:op1_ID/:op2_ID/:date_from/:date_to",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/PassesAnalysis/:op1_ID/:op2_ID/:date_from/:date_to",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"PassesAnalysis",
+								":op1_ID",
+								":op2_ID",
+								":date_from",
+								":date_to"
+							],
+							"variable": [
+								{
+									"key": "op1_ID",
+									"value": "AO"
+								},
+								{
+									"key": "op2_ID",
+									"value": "OO"
+								},
+								{
+									"key": "date_from",
+									"value": "2019-01-01"
+								},
+								{
+									"key": "date_to",
+									"value": "2019-01-31"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "743"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2e7-xnZ22UxcMjusMsOfKTLR9Laxl9I\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 22 Jan 2022 13:20:50 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"num\": 5,\n    \"list\": [\n        {\n            \"passID\": \"AUU6469015\",\n            \"timestamp\": \"2019-01-07T04:24:36.000Z\",\n            \"stationRef\": \"AO13\",\n            \"vehicleRef\": \"EM54HQI58682\",\n            \"charge\": 2.8,\n            \"hn\": \"OO\",\n            \"p\": \"away\"\n        },\n        {\n            \"passID\": \"HTD0281631\",\n            \"timestamp\": \"2019-01-07T17:53:52.000Z\",\n            \"stationRef\": \"AO08\",\n            \"vehicleRef\": \"RK48BOP88344\",\n            \"charge\": 2.8,\n            \"hn\": \"OO\",\n            \"p\": \"away\"\n        },\n        {\n            \"passID\": \"LYM3865613\",\n            \"timestamp\": \"2019-01-27T07:18:05.000Z\",\n            \"stationRef\": \"AO02\",\n            \"vehicleRef\": \"XV40HUQ04740\",\n            \"charge\": 2.8,\n            \"hn\": \"OO\",\n            \"p\": \"away\"\n        },\n        {\n            \"passID\": \"PUH3791153\",\n            \"timestamp\": \"2019-01-30T04:04:07.000Z\",\n            \"stationRef\": \"AO19\",\n            \"vehicleRef\": \"XV40HUQ04740\",\n            \"charge\": 2.8,\n            \"hn\": \"OO\",\n            \"p\": \"away\"\n        },\n        {\n            \"passID\": \"WEZ7128958\",\n            \"timestamp\": \"2019-01-23T21:33:27.000Z\",\n            \"stationRef\": \"AO17\",\n            \"vehicleRef\": \"JF94VYA88954\",\n            \"charge\": 2.8,\n            \"hn\": \"OO\",\n            \"p\": \"away\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "localhost:8000/PassesCost/:op1_ID/:op2_ID/:date_from/:date_to",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/PassesCost/:op1_ID/:op2_ID/:date_from/:date_to",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"PassesCost",
+						":op1_ID",
+						":op2_ID",
+						":date_from",
+						":date_to"
+					],
+					"variable": [
+						{
+							"key": "op1_ID",
+							"value": "AO"
+						},
+						{
+							"key": "op2_ID",
+							"value": "OO"
+						},
+						{
+							"key": "date_from",
+							"value": "2019-01-01"
+						},
+						{
+							"key": "date_to",
+							"value": "2019-01-31"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:8000/PassesCost/:op1_ID/:op2_ID/:date_from/:date_to",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/PassesCost/:op1_ID/:op2_ID/:date_from/:date_to",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"PassesCost",
+								":op1_ID",
+								":op2_ID",
+								":date_from",
+								":date_to"
+							],
+							"variable": [
+								{
+									"key": "op1_ID",
+									"value": "AO"
+								},
+								{
+									"key": "op2_ID",
+									"value": "OO"
+								},
+								{
+									"key": "date_from",
+									"value": "2019-01-01"
+								},
+								{
+									"key": "date_to",
+									"value": "2019-01-31"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "160"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"a0-VGSvWADIf4Oi4E7bBBOfU3S3hIQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 22 Jan 2022 13:25:19 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"op1_ID\": \"AO\",\n    \"op2_ID\": \"OO\",\n    \"RequestTimestamp\": \"2022-01-22T13:25:19.000Z\",\n    \"PeriodFrom\": \"2019-01-01\",\n    \"PeriodTO\": \"2019-01-31\",\n    \"NumberOfPasses\": 5,\n    \"PassesCost\": 14\n}"
+				}
+			]
+		},
+		{
+			"name": "ChargesBy/:op_ID/:date_from/:date_to",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/ChargesBy/:op_ID/:date_from/:date_to",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"ChargesBy",
+						":op_ID",
+						":date_from",
+						":date_to"
+					],
+					"variable": [
+						{
+							"key": "op_ID",
+							"value": "AO"
+						},
+						{
+							"key": "date_from",
+							"value": "2019-01-01"
+						},
+						{
+							"key": "date_to",
+							"value": "2019-01-31"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "ChargesBy/:op_ID/:date_from/:date_to",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/ChargesBy/:op_ID/:date_from/:date_to",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"ChargesBy",
+								":op_ID",
+								":date_from",
+								":date_to"
+							],
+							"variable": [
+								{
+									"key": "op_ID",
+									"value": "AO"
+								},
+								{
+									"key": "date_from",
+									"value": "2019-01-01"
+								},
+								{
+									"key": "date_to",
+									"value": "2019-01-31"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "251"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"fb-lNeQLdr8gFDNZcJRzchwTKY2r8w\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 22 Jan 2022 13:26:00 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"OP_ID\": \"AO\",\n    \"requestTime\": \"2022-01-22T13:26:00.000Z\",\n    \"PERIOD_FROM\": \"2019-01-01\",\n    \"PERIOD_TO\": \"2019-01-31\",\n    \"op0\": \"EG\",\n    \"value0\": 16.4,\n    \"op1\": \"GF\",\n    \"value1\": 11.2,\n    \"op2\": \"KO\",\n    \"value2\": 19.2,\n    \"op3\": \"MR\",\n    \"value3\": 0,\n    \"op4\": \"NE\",\n    \"value4\": 21.2,\n    \"op5\": \"OO\",\n    \"value5\": 0\n}"
+				}
+			]
+		}
+	]
+}

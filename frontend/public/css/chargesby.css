@@ -1,0 +1,61 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    font-family: sans-serif;
+    background-color: rgb(255, 145, 66);
+}
+
+p {
+    margin: 0px;
+}
+
+
+/* NAV STYLING  */
+
+.navbar {
+    position: sticky;
+    width: 100%;
+    z-index: 999;
+    padding: 30px 0;
+    background-color: rgb(255, 145, 66);
+}
+
+.navbar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a {
+    display: block;
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table,
+th,
+td {
+    line-height: 1.4;
+    width: 50%;
+    text-align: center;
+    border: 1px solid black;
+}

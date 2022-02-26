@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #d9e6c5;
+}
+header {
+text-align: center;
+}
+h2 { 
+    display:ruby ;
+    text-align: center;
+ }

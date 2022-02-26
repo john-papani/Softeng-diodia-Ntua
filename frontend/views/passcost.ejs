@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="el,en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/cost.css">
+    <title>PassCost</title>
+</head>
+<nav class="navbar">
+    <div class="max-width">
+
+        <a href="/home">
+            <img src="/img/home1.png" alt="Home Page" style="width: 80px;height:80px; margin-left: 10px;">
+        </a>
+
+        <ul class="menu">
+            <li><a href="/pass/AO/2019-01-01/2019-01-31" class="menu-btn">PassesPerStation</a></li>
+            <li><a href="/cost/OO/NE/2019-01-01/2019-01-31" class="menu-btn">PassCost</a></li>
+            <li><a href="/analysis/OO/NE/2019-01-01/2019-01-31" class="menu-btn">PassesAnalysis</a></li>
+            <li><a href="/chargesby/AO/2019-01-01/2019-01-31" class="menu-btn">Chargesby</a></li>
+        </ul>
+
+    </div>
+</nav>
+
+
+
+<body>
+    <div class="limiter">
+        <div class="uptable">
+            Εμφανιζονται ο αριθμός των διέλευσεων αλλά και το πόσο ανάμεσα σε δύο <i>διαφορετικούς</i> operators
+        </div>
+        <% if(passesCost !=null){%>
+            <div class="container-table">
+                <div class="wrap-table">
+                    <div class="table">
+                        <div class="table-head">
+                            <table>
+                                <thead>
+                                    <tr class="row100 head">
+                                        <th class="cell100 column1">Apo (ID) </th>
+                                        <th class="cell100 column2">Se (ID)</th>
+                                        <th class="cell100 column3">Time Now </th>
+                                        <th class="cell100 column4">Apo </th>
+                                        <th class="cell100 column5">Mexri </th>
+                                        <th class="cell100 column6">Number Of Passes</th>
+                                        <th class="cell100 column7">Kostos</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+
+                        <div class="table-body js-pscroll">
+                            <table>
+                                <tbody>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">
+                                            <%- passesCost.op2_ID %>
+                                        </td>
+                                        <td class="cell100 column2">
+                                            <%- passesCost.op1_ID %>
+                                        </td>
+                                        <td class="cell100 column3">
+                                            <%- passesCost.RequestTimestamp %>
+                                        </td>
+                                        <td class="cell100 column4">
+                                            <%- passesCost.PeriodFrom %>
+                                        </td>
+                                        <td class="cell100 column5">
+                                            <%- passesCost.PeriodTO %>
+                                        </td>
+                                        <td class="cell100 column6">
+                                            <%-JSON.stringify (passesCost.NumberOfPasses )%>
+                                        </td>
+                                        <td class="cell100 column7">
+                                            <%-JSON.stringify( passesCost.PassesCost) %> €
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <% } else { %>
+                            NO POSTES FOUND
+                            <% } %>
+                    </div>
+                </div>
+            </div>
+    </div>
+</body>
+
+<br>
+<br>
+<br>
+<footer id="odigies">
+    <strong>Οδηγίες:</strong><br> Για άλλους operator και ενδεχομένος διαφορετικές ημερομηνίες, <strong>απαιτείται αλλαγή του url.</strong><br> Οι αποδεκτοί operator <i>AO,EG,GF,KO,MR,NE,OO</i><br> Οι ημερομηνίες εισαγόνται με την εξής μορφη
+    <strong>αποκλειστικά</strong> YYYY-MM-DD<br> Για παράδειγμα: <i> cost/OO/NE/2020-12-15/2021-01-01 </i>
+</footer>
+
+</html>
