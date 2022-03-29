@@ -32,9 +32,10 @@
 - - -
 #### Team Members
 
+
 | Name |  Εmail|
 | --- | --- |
+| Andreas Chrysovalantis-Konstantinos | *el18102@mail.ntua.gr* |
+|  Maniatis Andreas  | *el18070@mail.ntua.gr* |
 |  Papanikolaou Ioannis | *el18064@mail.ntua.gr* |
-| A. C.-K. | *el18102@mail.ntua.gr* |
-|  M. A.  | *el18070@mail.ntua.gr* |
 
